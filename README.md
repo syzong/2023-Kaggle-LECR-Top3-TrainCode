@@ -19,3 +19,6 @@ https://www.kaggle.com/competitions/learning-equality-curriculum-recommendations
 
 ## 详细 solution ：
 https://www.kaggle.com/competitions/learning-equality-curriculum-recommendations/discussion/394838
+
+## 推理代码 ：
+lecr-submit-models-recall50-2ndrerank-v2.ipynb
