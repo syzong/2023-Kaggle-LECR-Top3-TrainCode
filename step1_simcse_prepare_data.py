@@ -21,10 +21,13 @@ valid_topic_id = pd.read_csv('data/valid_samples_1k_first.csv')
 valid_topic_id = valid_topic_id['topic_id'].values.tolist()
 df_topic = pd.read_csv('./learning-equality-curriculum-recommendations/topics.csv')
 df_target = pd.read_csv(f'./learning-equality-curriculum-recommendations/correlations.csv')
+
+'''
 df_target_pseudo = pd.read_csv(f'./data/submission_pseudo.csv')
 df_target_pseudo = df_target_pseudo.dropna()
 df_target_pseudo = df_target_pseudo.rename(columns={"preds": "content_ids"})
 df_target = pd.concat([df_target, df_target_pseudo])
+'''
 
 
 df_tmp = df_topic[['id', 'parent']].reset_index(drop=True).copy()
